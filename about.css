@@ -1,0 +1,208 @@
+/* About Page Specific Styles */
+
+/* About Hero Section */
+.about-hero {
+    height: 50vh;
+    margin-top: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("asset/about-hero.jpg") no-repeat center
+      center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* About Sections */
+  .about-section {
+    padding: 80px 0;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .about-text p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Mission & Values */
+  .mission-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .mission-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .mission-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .mission-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  
+  .mission-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .mission-card p {
+    color: #7f8c8d;
+  }
+  
+  /* Team Section */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .team-member {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .member-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3498db;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+  }
+  
+  .position {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .bio {
+    color: #7f8c8d;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .testimonial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+  
+  .quote {
+    font-size: 2rem;
+    color: #3498db;
+    opacity: 0.3;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .testimonial-author h4 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-author p {
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-image {
+      margin-bottom: 30px;
+    }
+  
+    .mission-values,
+    .team-grid,
+    .testimonials {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
